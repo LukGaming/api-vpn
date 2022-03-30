@@ -14,16 +14,17 @@
  */
 
 $router->group(['prefix' => 'api'], function () use ($router) {
-    /*Rotas de Games*/
-    $router->get('/games/{paginate}/get', 'gamesController@index');
-    //  $router->get('/games', 'gamesController@index');
-    $router->post('/games/create', 'GamesController@store');
-    $router->get('/games/{id}', 'GamesController@show');
-    $router->patch('/games/{id}', 'GamesController@update');
-    // $router->delete('/produtos/{id}', 'GamesController@destroy');
-    $router->get('/games/{id}/edit', 'GamesController@edit');
-    /*Rotas de Games*/
-    /*Rota de Imagens*/
-    $router->delete('/games/remove-image/{id}', 'ImagesGamesController@removeImage');
-    /*Rota de Imagens*/
+    // /*Rotas de Games*/
+    // $router->get('/games/{paginate}/get', 'gamesController@index');
+    // //  $router->get('/games', 'gamesController@index');
+    // $router->post('/games/create', 'GamesController@store');
+    // $router->get('/games/{id}', 'GamesController@show');
+    // $router->patch('/games/{id}', 'GamesController@update');
+    // // $router->delete('/produtos/{id}', 'GamesController@destroy');
+    // $router->get('/games/{id}/edit', 'GamesController@edit');
+    // /*Rotas de Games*/
+    // /*Rota de Imagens*/
+    // $router->delete('/games/remove-image/{id}', 'ImagesGamesController@removeImage');
+    // /*Rota de Imagens*/
+    $router->post('/vpn/create', 'VpnController@store');
 });
